@@ -1,0 +1,149 @@
+/*
+Theme Name: Site
+Theme URI: https://mdbootstrap.com 
+Description: Thème utilisant Material Design pour Bootstrap 4
+Version: 1
+Author: Fabienne Bernard
+Author URI: https://kylenzo.com
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* Navigation*/
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #1A78C2;
+}
+
+footer.page-footer {
+    background-color: #304a74;
+}
+
+main {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.cat-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.current-cat {
+    z-index: 2;
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
+
+.current-cat>a {
+    color: #fff;
+}
+
+#home {
+    background: url("./img/sites/800x600_siege.jpg")no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+
+/* Carousel*/
+
+.carousel {
+    height: 50%;
+}
+
+@media (max-width: 776px) {
+    .carousel {
+        height: 100%;
+    }
+}
+
+.carousel-item .active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+
+/*Caption*/
+
+.flex-center {
+    color: #fff;
+}
+
+.parallax2 {
+    padding: 0;
+    background-color: #256;
+    height: 300px;
+}
+
+#section2 {
+    padding: 0;
+    background-image: url("./img/medical/medical1.jpg");
+    background-size: 100% 100%;
+    min-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.extra-padding-05 {
+    padding: .5rem;
+}
+
+.pricing-card .card-up .price:before {
+    content: "€ ";
+    font-size: 30px;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: -20px;
+}
+
+.pricing-card .card-up .price:after {
+    content: " ttc/jour";
+}
+
+.badgeRecrut {
+    position: absolute;
+    margin-left: 80%;
+    top: -25px
+}
+
+
+/** Card des prix **/
+
+.pricing-card .price h1::after {
+    content: "TTC/jrs";
+}
+
+.pricing-card .price h1::before {
+    content: "€";
+}
